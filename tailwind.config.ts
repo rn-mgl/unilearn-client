@@ -40,6 +40,15 @@ const config: Config = {
         "accent-light": "#F8BBD0",
         "accent-dark": "#D81B60",
       },
+      keyframes: {
+        float: {
+          "0%": { transform: "translate(0, 12%)" },
+          "100%": { transform: "translate(0, -12%)" },
+        },
+      },
+      animation: {
+        float: "float 4s ease-in-out alternate infinite ",
+      },
     },
   },
   plugins: [],

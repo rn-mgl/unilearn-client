@@ -29,9 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth ">
       <SessionProvider session={params}>
-        <body
-          className={`${nunito.variable} ${poppins.variable} bg-default-light`}
-        >
+        <body className={`${nunito.variable} ${poppins.variable}`}>
           {children}
         </body>
       </SessionProvider>
