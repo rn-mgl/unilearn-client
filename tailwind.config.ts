@@ -41,13 +41,18 @@ const config: Config = {
         "accent-dark": "#D81B60",
       },
       keyframes: {
-        float: {
-          "0%": { transform: "translate(0, 12%)" },
-          "100%": { transform: "translate(0, -12%)" },
+        floatDownUp: {
+          "0%": { transform: "translate(0, 20%)" },
+          "100%": { transform: "translate(0, -20%)" },
+        },
+        floatUpDown: {
+          "0%": { transform: "translate(0, -20%)" },
+          "100%": { transform: "translate(0, 20%)" },
         },
       },
       animation: {
-        float: "float 4s ease-in-out alternate infinite ",
+        floatDownUp: "floatDownUp 4s ease-in-out alternate infinite ",
+        floatUpDown: "floatUpDown 4s ease-in-out alternate infinite ",
       },
     },
   },
